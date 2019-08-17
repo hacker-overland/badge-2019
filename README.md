@@ -1,24 +1,32 @@
 # Hacker Campers Badge 2019
 
+Blog post: https://ash-wilson.com//blog/hardware/badgelife/defcon/2019/08/16/Thats-How-They-Get-You.html
+
 ## Parts list
 
-| qty | Name                 | Link                                        |
-|-----|----------------------|---------------------------------------------|
-| 1   | ESP32 breakout board | https://www.adafruit.com/product/4172       |
-| 5   | Neopixel LEDs        | https://www.sparkfun.com/procucts/12986     |
-| 1   | I2S audio codec      | https://www.sparkfun.com/procucts/14809     |
-| 1   | Speaker              | https://www.sparkfun.com/procucts/15350     |
-| 1   | Battery box          |                                             |
-| 1   | Front plate          |                                             |
-| 1   | Back plate           |                                             |
-| 6   | M2 screws            |                                             |
-| 3   | M2 spacers           |                                             |
-| 1   | Power switch         | https://www.sparkfun.com/procucts/102       |
-| 1   | Lanyard              |                                             |
-| 1   | SAO connector        |                                             |
-| 3   | AA batteries         |                                             |
+Board files located in this repo under `boards/`, or use the links below to
+order directly from https://oshpark.com.
+
+| qty | Name                 | Link                                         |
+|-----|----------------------|----------------------------------------------|
+| 1   | ESP32 breakout board | https://www.adafruit.com/product/4172        |
+| 5   | Neopixel LEDs        | https://www.sparkfun.com/procucts/12986      |
+| 1   | I2S audio codec      | https://www.sparkfun.com/procucts/14809      |
+| 1   | Speaker              | https://www.sparkfun.com/procucts/15350      |
+| 1   | 3xAA Battery box     |                                              |
+| 1   | Front plate          | https://oshpark.com/shared_projects/XpUuSjO7 |
+| 1   | Back plate           | https://oshpark.com/shared_projects/cNtZyBs1 |
+| 6   | M2 screws            |                                              |
+| 3   | M2 spacers           |                                              |
+| 1   | Power switch         | https://www.sparkfun.com/procucts/102        |
+| 1   | Lanyard              |                                              |
+| 1   | SAO connector        |                                              |
+| 3   | AA batteries         |                                              |
 
 ## Build requirements
+
+Only install this if you don't want to do it the easy way. Otherwise, follow
+the directions under the `Loading Firmware` section, below.
 
 * ESP IDF
    * https://github.com/espressif/esp-idf
@@ -53,7 +61,10 @@
 * Use a hot glue gun to fill holes in top plate, creating diffusers for LEDs
 * Use the screws and spacers to attach the top plat to the bottom plate
 
-## Loading firmware (Ubuntu 18.04)
+![Badges](https://ash-wilson.com/blog/images/hacker_overland_v4.jpg)
+
+
+## Loading firmware (Ubuntu 18.04, Docker)
 
 * Configure roles (by mac address) in `source/configs/config.json`
 * Build the Docker container: `docker build -t flasher:latest .`
