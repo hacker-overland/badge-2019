@@ -1,5 +1,7 @@
 # Hacker Campers Badge 2019
 
+[![Build Status](https://travis-ci.com/hacker-overland/badge-2019.svg?branch=master)](https://travis-ci.com/hacker-overland/badge-2019)
+
 Blog post: https://ash-wilson.com//blog/hardware/badgelife/defcon/2019/08/16/Thats-How-They-Get-You.html
 
 ## Parts list
