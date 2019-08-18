@@ -70,5 +70,5 @@ the directions under the `Loading Firmware` section, below.
 * Build the Docker container: `docker build -t flasher:latest .`
 * Plug in USB TTY (Assuming it will show up as `/dev/ttyUSB0`)
 * Restart ESP32 in ROM serial bootloader mode.
-* Flash the badge `docker run -it --rm  --device=/dev/ttyUSB0 builder`
+* Flash the badge `docker run -it --rm  --device=/dev/ttyUSB0 flasher:latest`
 * Follow directions on-screen. You will need to re-enter bootloader mode after flash is cleared.
